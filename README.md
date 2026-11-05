@@ -10,11 +10,7 @@ VidCut adalah alat pemotong video berbasis FFmpeg yang menggunakan metode *Smart
 - Multi Cut untuk memotong beberapa bagian video sekaligus.
 - Menggabungkan hasil potongan tanpa encoding ulang.
 - Pengaturan preset, CRF, dan bitrate audio.
-- Mempertahankan informasi rotasi, format piksel, dan warna video sumber.
-- Progress bar dengan informasi kecepatan dan estimasi waktu.
-- Mendukung pembatalan proses menggunakan `Ctrl+C`.
-- Pembersihan file sementara secara otomatis.
-
+  
 ## Persyaratan
 
 - Python 3.9 atau lebih baru.
