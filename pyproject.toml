@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vidcut"
+dynamic = ["version"]
+description = "Fast video cutter built on FFmpeg that re-encodes only the clip edges."
+requires-python = ">=3.9"
+authors = [{ name = "agb-777" }]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "hypothesis"]
+
+[project.urls]
+Homepage = "https://github.com/agb-777/vidcut"
+
+[project.scripts]
+vidcut = "vidcut.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["vidcut*"]
+
+[tool.setuptools.dynamic]
+version = { attr = "vidcut.appinfo.VERSION" }
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
